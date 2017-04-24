@@ -2,15 +2,15 @@ CROSS_HOST="x86_64-w64-mingw32"
 inherit cross
 
 NAME="mingw64-x86_64-libidn2"
-VERSION=0.11
+VERSION=2.0.1
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="International Domain Name library for Win64 toolchain"
 DESCRIPTION="An implementation of the Stringprep, Punycode and IDNA specifications defined
 by the IETF Internationalized Domain Names (IDN) working group."
 HOMEPAGE="http://www.gnu.org/software/libidn/"
-SRC_URI="ftp://alpha.gnu.org/gnu/libidn/libidn2-${VERSION}.tar.gz \
-         ftp://alpha.gnu.org/gnu/libidn/libidn2-${VERSION}.tar.gz.sig"
+SRC_URI="mirror://gnu/libidn/libidn2-${VERSION}.tar.xz \
+         mirror://gnu/libidn/libidn2-${VERSION}.tar.xz.sig"
 SRC_DIR="libidn2-${VERSION}"
 
 # prevent installation of gtk-docs (already shipped in libidn2-doc)
